@@ -1,15 +1,8 @@
 import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from '../component/home/Home';
 import Header from '../component/header/Header';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { HashRouter } from "react-router-dom";
-
-
 
 import GoToTop from '../GoToTop';
-import { AuthProvider } from '../component/context/UserContext';
-
 
 const Routerpage =()=>{
 
@@ -36,35 +29,12 @@ const Routerpage =()=>{
     <Header/>
    
     <Routes>
-    <Route exact path="/"  element={ <Home/>} /> 
-{/* <>
-{  
-       token || DigitalCode != undefined || '' ? (
-        <Route exact path='/sendMoney' element= {< SendMoney /> } />
-
-        
-       ):(
-        <></>
-
-       )
-    }
- </> */}
-
-   
-    
-    
+    <Route exact path="/"  element={ <Home/>} />    
     </Routes>
-    <ToastContainer />
      
 
     </>
     </Router>
-      {/* ):(
-        <>
-        </>
-
-        )
-      } */}
      
    </>
     

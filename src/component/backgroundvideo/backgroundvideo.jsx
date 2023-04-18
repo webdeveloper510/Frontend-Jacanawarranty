@@ -4,23 +4,12 @@ import Vimeo from "@u-wave/react-vimeo"
 import Button from 'react-bootstrap/Button';
 import IframePlayer from "player-iframe-video";
 export default function BackgroundVideo() {
-  // const iFrame = <iframe width="100%" height="100%"
-  // src="https://player.vimeo.com/video/422883518?h=aee925f4ae&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1"
-  // frameBorder="0"
-  // allow="autoplay; fullscreen; picture-in-picture"
-  // allowFullScreen
-  // title="test player iframe vimeo" 
-  
-  // />
+ 
   return (
      
     <>
-    {/* <div className="root">
-    <div className="divRoot">
-      <IframePlayer id={"iframe-vimeo-player-test"} iFrame={iFrame} loop={true}/>
-    </div>
-  </div>; */}
-  <Vimeo
+  
+  {/* <Vimeo
   video="529949088"
   height={500}
   loop={true}
@@ -28,7 +17,7 @@ export default function BackgroundVideo() {
   width={1920}
  
   autoplay
-/>
+/> */}
       {/* <VideoContainer>
         <Video
           background={true}
@@ -57,45 +46,45 @@ export default function BackgroundVideo() {
   )
 }
 
-const VideoContainer = styled.div`
-  bottom: 0;
-  left: 0;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: -1;
-`
+// const VideoContainer = styled.div`
+//   bottom: 0;
+//   left: 0;
+//   min-height: 100%;
+//   min-width: 100%;
+//   object-fit: cover;
+//   object-position: center;
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+//   z-index: -1;
+// `
 
-const Video = styled(props => <Vimeo {...props} />)`
-  height: 46.25vw; // for a 16:9 aspect ratio, 9/16*100 = 56.25
-  left: 50%;
-  min-height: 500px;
-  min-width: 177.77vh; // for a 16:9 aspect ratio, 16/9*100 = 177.77
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-`
+// const Video = styled(props => <Vimeo {...props} />)`
+//   height: 46.25vw; // for a 16:9 aspect ratio, 9/16*100 = 56.25
+//   left: 50%;
+//   min-height: 500px;
+//   min-width: 177.77vh; // for a 16:9 aspect ratio, 16/9*100 = 177.77
+//   position: absolute;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 100vw;
+// `
 
-{/*
-For a nice vintage and darkening effect
-*/}
+// {/*
+// For a nice vintage and darkening effect
+// */}
 
-const Overlay = styled.div`
-  background-color:rgb(0 0 0 / 67%);
-  bottom: 0;
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  left: 0;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  object-position: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-`
+// const Overlay = styled.div`
+//   background-color:rgb(0 0 0 / 67%);
+//   bottom: 0;
+//   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+//   left: 0;
+//   min-height: 100%;
+//   min-width: 100%;
+//   object-fit: cover;
+//   object-position: center;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   z-index: -1;
+// `

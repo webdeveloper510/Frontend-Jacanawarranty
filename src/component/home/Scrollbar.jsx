@@ -1,18 +1,12 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Phone from '../../assets/img/home/phone.jpg';
-import computer from '../../assets/img/home/computer-1.jpg';
-import TABLETS from '../../assets/img/home/tablet.jpg';
-import APPLIANCES from '../../assets/img/home/appliances (1).jpg';
-import TELEVISIONS from '../../assets/img/home/television.jpg';
-import GAMING from '../../assets/img/home/video.jpg';
-import { RiSmartphoneLine } from "react-icons/ri";
-import { IoMdLaptop } from "react-icons/io";
-import { FiTablet } from "react-icons/fi";
-import { MdOutlineKitchen } from "react-icons/md";
-import { RiComputerLine } from "react-icons/ri";
-import { TbDeviceGamepad2 } from "react-icons/tb";
+import { BsPhone } from "react-icons/bs";
+import { BsLaptop } from "react-icons/bs";
+import { SlScreenTablet } from "react-icons/sl";
+import { GiBlender } from "react-icons/gi";
+import { RxLaptop } from "react-icons/rx";
+import { TfiGame } from "react-icons/tfi";
 
 const responsive = {
   desktop: {
@@ -114,7 +108,7 @@ class Scrollbar extends React.Component {
         <div class="image-container increase-size">
 
           <div class="image-container-text" draggable={false}>
-          <RiSmartphoneLine />
+          <BsPhone/>
           <h2 className="heading_name">Phones</h2>
          
         {/* <img src={Phone} alt="phone"  /> */}
@@ -126,7 +120,7 @@ class Scrollbar extends React.Component {
 
           <div class="image-container-text"  draggable={false} 
 >
-          <IoMdLaptop/>
+          <BsLaptop/>
           <h2 className="heading_name">Laptops</h2>
           
         {/* <img src={computer} alt="computer"  /> */}
@@ -138,7 +132,7 @@ class Scrollbar extends React.Component {
 				<div class="image-container increase-size">
 
           <div class="image-container-text" draggable={false}>
-          <FiTablet/>
+          <SlScreenTablet/>
           <h2 className="heading_name">Tablets</h2>
          
         {/* <img src={TABLETS} alt="TABLETS"  /> */}
@@ -149,7 +143,7 @@ class Scrollbar extends React.Component {
        <div class="image-container increase-size">
 
           <div class="image-container-text" draggable={false}>
-          <MdOutlineKitchen/>
+          <GiBlender/>
           <h2 className="heading_name">Appliances</h2>
           
         {/* <img src={APPLIANCES} alt="APPLIANCES"  /> */}
@@ -161,7 +155,7 @@ class Scrollbar extends React.Component {
        <div class="image-container increase-size">
 
           <div class="image-container-text" draggable={false}>
-          <RiComputerLine/>
+          <RxLaptop/>
           <h2 className="heading_name">Televisions</h2>
         {/* <img src={TELEVISIONS} alt="TELEVISIONS"  /> */}
         
@@ -171,7 +165,7 @@ class Scrollbar extends React.Component {
         <div class="image-container increase-size">
 
 <div class="image-container-text" draggable={false}>
-<TbDeviceGamepad2/>
+<TfiGame/>
 <h2 className="heading_name">Gaming</h2>
 
         {/* <img src={GAMING} alt="GAMING"  /> */}
