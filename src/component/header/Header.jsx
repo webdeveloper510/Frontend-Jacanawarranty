@@ -1,13 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {links, NavLink, useNavigate} from 'react-router-dom';
-
-import Button from 'react-bootstrap/Button';
+import {NavLink, useNavigate} from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import UserContext from '../context/UserContext';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faUserCheck} from '@fortawesome/free-solid-svg-icons';
 
 // <!-- Vendor CSS Files -->
 import '../../assets/vendor/animatecss/animate.min.css';
@@ -40,7 +34,6 @@ import app from '../../assets/img/home/Group 01.svg';
 const Header =() => {
 
 
-  const [ setSessionId ] = useState('');
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -55,7 +48,6 @@ const Header =() => {
   // const token_forgot = localStorage.getItem("token_forgot");
   //   console.log("TOken_Forgot_password", token_forgot);
  
-  let sessionID;
   const navigate = useNavigate();
 
   
@@ -118,10 +110,6 @@ const Header =() => {
                       <NavLink to="/referral">Contact</NavLink>
                     </li>
 
-                    {/* <li> */}
-                    {      
-                      verification_otp || token != undefined || '' ? (
-
                         <li class="dropdown">
                           <a href="#">
                             <span>
@@ -133,19 +121,14 @@ const Header =() => {
                           <li><NavLink onClick={handleLogout}>Logout</NavLink></li>
                         </ul>
                       </li>
-                      
-                      ) : (
-                        <>
                         <li>
                         <NavLink to="/signup">Signup</NavLink>
                         </li>
                         <li>
                         <NavLink to="/login">Login</NavLink>
                         </li>
-                        </>
-                      )
-                    }
-                    {/* </li> */}
+                       
+                 
 
                   </ul>
                 
@@ -182,10 +165,6 @@ const Header =() => {
                       <NavLink to="/referral" onClick={handleClose}><HiUserGroup/>Referral</NavLink>
                     </li>
 
-                    {/* <li> */}
-                    {      
-                      verification_otp || token != undefined || '' ? (
-
                         <li class="dropdown">
                           <a href="#">
                             <span>
@@ -198,18 +177,15 @@ const Header =() => {
                         </ul>
                       </li>
                       
-                      ) : (
-                        <>
+                
                         <li>
                         <NavLink to="/signup" onClick={handleClose}><FaUserPlus/>Signup</NavLink>
                         </li>
                         <li>
                         <NavLink to="/login" onClick={handleClose}><AiOutlineLogin/>Login</NavLink>
                         </li>
-                        </>
-                      )
-                    }
-                    {/* </li> */}
+                  
+                     
 
                   </ul>
                 

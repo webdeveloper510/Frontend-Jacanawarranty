@@ -11,11 +11,11 @@ import { TfiGame } from "react-icons/tfi";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 992 },
-    items: 5
+    items: 6
   },
   tablet: {
     breakpoint: { max: 992, min: 420 },
-    items: 3
+    items: 5
   },
   mobile: {
     breakpoint: { max: 420, min: 0 },

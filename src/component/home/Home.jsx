@@ -14,15 +14,31 @@ import {TbSunglasses} from "react-icons/tb";
 import {AiOutlineFire} from "react-icons/ai";
 import {MdElectricBolt} from "react-icons/md";
 import {RxCrossCircled} from "react-icons/rx";
-
+import { BsPhone } from "react-icons/bs";
+import { GiGardeningShears } from "react-icons/gi";
+import { GiBlender } from "react-icons/gi";
+import { SlScreenDesktop } from "react-icons/sl";
+import { CgGym } from "react-icons/cg";
+import { MdCancelPresentation } from "react-icons/md";
+import { MdOutlineTransferWithinAStation } from "react-icons/md";
+import { AiOutlineFileProtect } from "react-icons/ai";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { TfiGame } from "react-icons/tfi";
+import { FaShippingFast } from "react-icons/fa";
+import { RxExclamationTriangle } from "react-icons/rx";
 import { ProgressBar} from 'react-bootstrap';
 import assistantimg from "../../assets/img/home/Jasmine2.png";
 import phoneimage from "../../assets/img/home/phone.png";
 import Button from 'react-bootstrap/Button';
 
-const Home = () => {
+import Blogs from "../blogs/Blogs";
+
+
+class Home extends React.Component {
+  render() {
   const percentage = 60
   const percentage1 = 80
+  
     return(
         <>
         
@@ -238,20 +254,20 @@ Tremendous savings directly to the end user, the consumer.</p>
     </div>
   <div className="col-md-4">
   <div className="icons_row">
-  <VscGraphLine/>
+  <BsPhone/>
   <h3>SMART PHONES</h3>
   <p>Covering all brands, makes and models.
 </p>
     </div>
     <div className="icons_row">
-  <VscGraphLine/>
+  <TfiGame/>
   <h3>ELECTRONICS</h3>
   <p>MP3, Camera CamCorder, Tablets, Laptops, Desktop Systems, PC Peripheral, Video Gaming Consoles, Portable Products.
 </p>
     </div>
 
     <div className="icons_row">
-  <VscGraphLine/>
+  <SlScreenDesktop/>
   <h3>HOME THEATRE/TV'S
 </h3>
   <p>Home Theatre, Televisions, and even DVD Media. We cover all makes and types.
@@ -264,18 +280,18 @@ Tremendous savings directly to the end user, the consumer.</p>
   </div>
   <div className="col-md-4">
   <div className="icons_row">
-  <VscGraphLine/>
+  <CgGym/>
   <h3>SPORTS EQUIPMENT</h3>
   <p>Fitness Equipment, Golfing Equipment, and Cycling Equipment, basically all sports equipment!
 </p>
     </div>
     <div className="icons_row">
-  <VscGraphLine/>
+  <GiBlender/>
   <h3>APPLIANCES</h3>
   <p>Replace, Repair/Replace, or Repair all makes and models.</p>
     </div>
     <div className="icons_row">
-  <VscGraphLine/>
+  <GiGardeningShears/>
   <h3>HOME/GARDEN/TOOLS</h3>
   <p>Furniture, Floorcare, Housewares, Lawn & Garden, Home Security</p>
     </div>
@@ -315,7 +331,7 @@ Tremendous savings directly to the end user, the consumer.</p>
     <div className="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms">
 						<div className="feature-three__single">
 							<div className="feature-three__icon insur-icon-svg">
-								<span aria-hidden="true" class="  icon-contract"><RxCrossCircled/></span>							</div>
+								<span aria-hidden="true" class="  icon-contract"><MdCancelPresentation/></span>							</div>
 							<div className="feature-three__content">
 								<h3 className="feature-three__sub-title">CANCELLATIONS</h3>
 								<p className="feature-three__title">If you cancel your warranty within the first 30 days, you will get a full refund, and it will be sent to you within 10 business days.
@@ -326,7 +342,7 @@ Tremendous savings directly to the end user, the consumer.</p>
           <div className="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms">
 						<div className="feature-three__single">
 							<div className="feature-three__icon insur-icon-svg">
-              <span aria-hidden="true" class="  icon-contract"><RxCrossCircled/></span>									</div>
+              <span aria-hidden="true" class="  icon-contract"><MdOutlineTransferWithinAStation/></span>									</div>
 							<div className="feature-three__content">
 								<h3 className="feature-three__sub-title">COVERAGE FOLLOWING</h3>
 								<p className="feature-three__title">If you upgrade your phone, continuous coverage follows the upgrade. If you sell your product, your warranty follows your product.
@@ -338,7 +354,7 @@ Tremendous savings directly to the end user, the consumer.</p>
           <div className="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms">
 						<div className="feature-three__single">
 							<div className="feature-three__icon insur-icon-svg">
-              <span aria-hidden="true" class="  icon-contract"><RxCrossCircled/></span>								</div>
+              <span aria-hidden="true" class="  icon-contract"><AiOutlineFileProtect/></span>								</div>
 							<div className="feature-three__content">
 								<h3 className="feature-three__sub-title">FAST CLAIM FILING</h3>
 								<p className="feature-three__title">Your customer portal allows you to file a claim instantly with instant responses and quick claim adjudication that saves money!
@@ -350,7 +366,7 @@ Tremendous savings directly to the end user, the consumer.</p>
           <div className="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms">
 						<div className="feature-three__single">
 							<div className="feature-three__icon insur-icon-svg">
-              <span aria-hidden="true" class="  icon-contract"><RxCrossCircled/></span>						</div>
+              <span aria-hidden="true" class="  icon-contract"><AiOutlineClockCircle/></span>						</div>
 							<div className="feature-three__content">
 								<h3 className="feature-three__sub-title">TURN AROUND TIME</h3>
 								<p className="feature-three__title">We'll have either an authorized on-site service repair specialist at your door, or have a new replacement in your hand within 5 days of your claims request.
@@ -362,7 +378,7 @@ Tremendous savings directly to the end user, the consumer.</p>
           <div className="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms">
 						<div className="feature-three__single">
 							<div className="feature-three__icon insur-icon-svg">
-              <span aria-hidden="true" class="  icon-contract"><RxCrossCircled/></span>						</div>
+              <span aria-hidden="true" class="  icon-contract"><FaShippingFast/></span>						</div>
 							<div className="feature-three__content">
 								<h3 className="feature-three__sub-title">SIMPLE SHIPPING!
 </h3>
@@ -375,7 +391,7 @@ Tremendous savings directly to the end user, the consumer.</p>
           <div className="col-xl-4 col-lg-4 wow fadeInLeft animated" data-wow-delay="100ms">
 						<div className="feature-three__single">
 							<div className="feature-three__icon insur-icon-svg">
-              <span aria-hidden="true" class="  icon-contract"><RxCrossCircled/></span>							</div>
+              <span aria-hidden="true" class="  icon-contract"><RxExclamationTriangle/></span>		</div>
 							<div className="feature-three__content">
 								<h3 className="feature-three__sub-title">NO FRUSTRATING CLAIMS
 </h3>
@@ -388,9 +404,20 @@ Tremendous savings directly to the end user, the consumer.</p>
     </div>
     </div>
   </div>
+  
+
+
+  <div className="blogs-section">
+    <div className="container">
+     
+    <Blogs/>
+      
+    </div>
+
+  </div>
     </>
     )
 }
-
+}
 
 export default Home; 
