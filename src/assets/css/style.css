@@ -331,9 +331,12 @@ nav#navbar ul li ul li a:hover {
   padding: 6px !important;
   padding-left: 15px !important;
 }
+
+
 .offcanvas-body nav ul li svg {
- margin-right:10px;
- font-size:20px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: -1px;
 }
 .offcanvas-body nav ul li:last-child {
   border-bottom: none;
