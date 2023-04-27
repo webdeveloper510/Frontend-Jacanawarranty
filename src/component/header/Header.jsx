@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react";
-import {NavLink, useNavigate} from 'react-router-dom';
+import React, {useState} from "react";
+import {NavLink} from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
@@ -20,16 +20,9 @@ import '../../assets/css/style.css';
 import '../../assets/css/responsive.css';
 
 import { RxHamburgerMenu } from "react-icons/rx";
-import { GoHome } from "react-icons/go";
-import { HiInformationCircle } from "react-icons/hi";
-import { FaHandsHelping } from "react-icons/fa";
-import { HiUserGroup } from "react-icons/hi";
-import { IoIosArrowDown } from "react-icons/io";
-import { AiOutlineLogin } from "react-icons/ai";
-import { FaUserPlus } from "react-icons/fa";
 
-import app from '../../assets/img/home/Group 01.svg';
 
+import logoblue from '../../assets/img/home/logo-blue.png';
 
 const Header =() => {
 
@@ -39,28 +32,8 @@ const Header =() => {
   const handleClose = () => setShow(false);
   const mobilemenuShow = () => setShow(true);
 
-  const token = localStorage.getItem("token");
-  console.log("TOKEN", token);
 
-  const verification_otp = localStorage.getItem("verification_otp");
-  console.log("Verification Message", verification_otp)
 
-  // const token_forgot = localStorage.getItem("token_forgot");
-  //   console.log("TOken_Forgot_password", token_forgot);
- 
-  const navigate = useNavigate();
-
-  
-
-  const handleLogout = (event) => {
-      event.preventDefault();
-      localStorage.clear();
-      navigate('/login')
-      // window.location.reload(false);
-      // window.location.reload();
-      // notify();
-      
-  }
 
     return(
         <>
@@ -83,18 +56,18 @@ const Header =() => {
                       <NavLink className="" to="/">Home</NavLink>
                     </li>
                     <li>
-                      <NavLink to="Coverage"> Savings</NavLink>
+                      <NavLink to="/Savings"> Savings</NavLink>
                       </li>
                     <li>
-                      <NavLink to="Savings"> Compare</NavLink>
+                      <NavLink to="/Compare"> Compare</NavLink>
                       </li>
                      
 
                       <li>
-                      <NavLink to="Coverage"> Coverage</NavLink>
+                      <NavLink to="/Coverage"> Coverage</NavLink>
                       </li>
                       <li>
-                      <NavLink to="Plans"> Plans</NavLink>
+                      <NavLink to="/Plans"> Plans</NavLink>
                       </li>
                       <li>
                       <NavLink to="/blog"> Blog</NavLink>
@@ -104,13 +77,13 @@ const Header =() => {
                       </li>
                   
                     <li>
-                      <NavLink to="/help">FAQ</NavLink>
+                      <NavLink to="/FAQ">FAQ</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/referral">Contact</NavLink>
+                      <NavLink to="/Contact">Contact</NavLink>
                     </li>
 
-                        <li class="dropdown">
+                        {/* <li class="dropdown">
                           <a href="#">
                             <span>
                             My account <IoIosArrowDown style={{ color: 'rgb(20, 34, 224);' }}/>
@@ -118,9 +91,9 @@ const Header =() => {
                           </a>
                         <ul>
                         <li> <NavLink to="/dashboard">Dashboard</NavLink></li>
-                          <li><NavLink onClick={handleLogout}>Logout</NavLink></li>
+                          <li><NavLink>Logout</NavLink></li>
                         </ul>
-                      </li>
+                      </li> */}
                         <li>
                         <NavLink to="/signup">Signup</NavLink>
                         </li>
@@ -142,7 +115,7 @@ const Header =() => {
           <Offcanvas.Title> <div className="logo">
                   <h1 className="text-light">
                   <NavLink to="/">
-                    <img src={logo} alt="logo"  />
+                    <img src={logoblue} alt="logo" className="mobile-logo" />
                     </NavLink>
                   </h1>
                 </div></Offcanvas.Title>
@@ -150,54 +123,70 @@ const Header =() => {
         <Offcanvas.Body>
          
 
-                <nav id="navbar" className="navbar">
+        <nav id="navbar" className="navbar">
                   <ul>
                     <li>
-                      <NavLink className="" to="/" onClick={handleClose}><GoHome/> Home</NavLink>
+                      <NavLink className=""  to="/" onClick={handleClose}>Home</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/aboutus" onClick={handleClose}> <HiInformationCircle/> About us</NavLink>
+                      <NavLink to="/Savings" onClick={handleClose}> Savings</NavLink>
                       </li>
                     <li>
-                      <NavLink to="/help" onClick={handleClose}><FaHandsHelping/>Help</NavLink>
+                      <NavLink to="/Compare" onClick={handleClose}> Compare</NavLink>
+                      </li>
+                     
+
+                      <li>
+                      <NavLink to="/Coverage" onClick={handleClose}> Coverage</NavLink>
+                      </li>
+                      <li>
+                      <NavLink to="/Plans" onClick={handleClose}> Plans</NavLink>
+                      </li>
+                      <li>
+                      <NavLink to="/Blog" onClick={handleClose}> Blog</NavLink>
+                      </li>
+                      <li>
+                      <NavLink to="/App" onClick={handleClose}> App</NavLink>
+                      </li>
+                  
+                    <li>
+                      <NavLink to="/FAQ" onClick={handleClose}>FAQ</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/referral" onClick={handleClose}><HiUserGroup/>Referral</NavLink>
+                      <NavLink to="/Contact" onClick={handleClose}>Contact</NavLink>
                     </li>
 
-                        <li class="dropdown">
+                        {/* <li class="dropdown">
                           <a href="#">
                             <span>
                             My account <IoIosArrowDown style={{ color: 'rgb(20, 34, 224);' }}/>
                               </span> 
                           </a>
                         <ul>
-                        <li> <NavLink to="/dashboard" onClick={handleClose}>UserDashboard</NavLink></li>
-                          <li><NavLink onClick={handleLogout}>Logout</NavLink></li>
+                        <li> <NavLink to="/dashboard">Dashboard</NavLink></li>
+                          <li><NavLink>Logout</NavLink></li>
                         </ul>
-                      </li>
-                      
-                
+                      </li> */}
                         <li>
-                        <NavLink to="/signup" onClick={handleClose}><FaUserPlus/>Signup</NavLink>
+                        <NavLink to="/Signup" onClick={handleClose}>Signup</NavLink>
                         </li>
                         <li>
-                        <NavLink to="/login" onClick={handleClose}><AiOutlineLogin/>Login</NavLink>
+                        <NavLink to="/Login" onClick={handleClose}>Login</NavLink>
                         </li>
-                  
-                     
+                       
+                 
 
                   </ul>
                 
                 </nav> 
                 {/* <!-- .navbar --> */}
 
-                <div className="row">
+                {/* <div className="row">
                   <div className="mobile-app-section">
-                <p>Download the RemitAssure App</p>
+                <p>Download Jacanna Warranty App</p>
                 <img src={app} alt="app-icons"/>
                 </div>
-                </div>
+                </div> */}
         </Offcanvas.Body>
       </Offcanvas>
                 
