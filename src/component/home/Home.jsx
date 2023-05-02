@@ -1,6 +1,5 @@
-
 import React from "react";
-//import Vimeo from '@u-wave/react-vimeo';
+import Vimeo from '@u-wave/react-vimeo';
 import 'react-multi-carousel/lib/styles.css';
 import BackgroundVideo from '../backgroundvideo/backgroundvideo';
 import {GiReceiveMoney} from "react-icons/gi";
@@ -97,11 +96,11 @@ Tremendous savings directly to the end user, the consumer.</p>
 </div>
 
 
-{/* <Vimeo
+<Vimeo
   className="video-section"
   video="257319294"
   autoplay
-/> */}
+/>
 
 
 </div>
