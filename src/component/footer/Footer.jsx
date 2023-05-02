@@ -16,7 +16,7 @@ class Footer extends React.Component {
         <footer className="footer-section">
         <div className="container">
   <div className="row">
-    <div className="col-md-3">
+    <div className="col-md-3 col-12">
     <NavLink to="/">
                     <img src={logo} alt="logo" className="footer-logo" />
                     </NavLink>
@@ -29,7 +29,7 @@ class Footer extends React.Component {
                     </div>
 
     </div>
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
     <h3>Most Popular</h3>
     <nav id="navbar" className="footer-navbar">
                   <ul>
@@ -56,7 +56,7 @@ class Footer extends React.Component {
                 
                 </nav> 
     </div>
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
     <h3>Electronics</h3>
     <nav id="navbar" className="footer-navbar">
                   <ul>
@@ -88,7 +88,7 @@ class Footer extends React.Component {
                 
                 </nav> 
     </div>
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
     <h3>Misc</h3>
     <nav id="navbar" className="footer-navbar">
                   <ul>
@@ -118,7 +118,7 @@ class Footer extends React.Component {
     </div>
 
     <div className="row">
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
   
     <h3>Home Theater/TV's</h3>
     <nav id="navbar" className="footer-navbar">
@@ -139,7 +139,7 @@ class Footer extends React.Component {
                 
 
     </div>
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
     <h3>Sports Equipment</h3>
     <nav id="navbar" className="footer-navbar">
                   <ul>
@@ -157,7 +157,7 @@ class Footer extends React.Component {
                 
                 </nav> 
     </div>
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
     <h3>Brand</h3>
     <nav id="navbar" className="footer-navbar">
                   <ul>
@@ -171,7 +171,7 @@ class Footer extends React.Component {
                 
                 </nav> 
     </div>
-    <div className="col-md-3">
+    <div className="col-md-3 col-4 col-12">
     <h3>Home/Garden</h3>
     <nav id="navbar" className="footer-navbar">
                   <ul>
@@ -197,10 +197,10 @@ class Footer extends React.Component {
 
  
   <div className="row row-margin">
-<div className="col-md-3">
+<div className="col-md-3 col-12">
 <img src={accept} alt="accept" className="footer-payment" />
 </div>
-<div className="col-md-9">
+<div className="col-md-9 col-12">
 <nav id="navbar" className="navbar">
                   <ul>
                     <li>

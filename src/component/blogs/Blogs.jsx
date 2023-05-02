@@ -1,5 +1,4 @@
 import React from "react"
-import Button from 'react-bootstrap/Button';
 import {NavLink} from 'react-router-dom';
 import blog1 from "../../assets/img/home/blog1.png"
 import blog2 from "../../assets/img/home/blog2.png"
@@ -20,7 +19,7 @@ class Blogs extends React.Component {
         </div>
 
         <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 col-12">
         <div className="cards">
         <div className="blogs-outer">
         <img src={blog1} alt="blog"/>
@@ -29,7 +28,7 @@ class Blogs extends React.Component {
         
         </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 col-12">
         <div className="cards">
             <div className="blogs-outer">
         <img src={blog2} alt="blog"/>
@@ -38,7 +37,7 @@ class Blogs extends React.Component {
        
         </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-12">
             <div className="cards">
             <div className="blogs-outer">
         <img src={blog3} alt="blog"/>
@@ -49,7 +48,7 @@ class Blogs extends React.Component {
             </div>
             </div>
             <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 col-12">
             <div className="cards">
             <div className="blogs-outer">
         <img src={blog4} alt="blog"/>
@@ -58,7 +57,7 @@ class Blogs extends React.Component {
         
         </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-12">
             <div className="cards">
             <div className="blogs-outer">
         <img src={blog5} alt="blog"/>
@@ -67,7 +66,7 @@ class Blogs extends React.Component {
       
         </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-12">
             <div className="cards">
             <div className="blogs-outer">
         <img src={blog6} alt="blog"/>

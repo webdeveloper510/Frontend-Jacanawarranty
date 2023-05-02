@@ -6,7 +6,6 @@ const App =()=>{
     <>
   
      < Routerpage autoclose={3000} />
-     {/* <GoToTop /> */}
    
     </>
   )

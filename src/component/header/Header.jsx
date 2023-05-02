@@ -1,16 +1,7 @@
 import React, {useState} from "react";
 import {NavLink} from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
-
-// <!-- Vendor CSS Files -->
-import '../../assets/vendor/animatecss/animate.min.css';
-import '../../assets/vendor/aos/aos.css';
-import '../../assets/vendor/bootstrap/css/bootstrap.min.css';
-import '../../assets/vendor/bootstrap-icons/bootstrap-icons.css';
-import '../../assets/vendor/boxicons/css/boxicons.min.css';
-import '../../assets/vendor/glightbox/css/glightbox.min.css';
-import '../../assets/vendor/swiper/swiper-bundle.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../assets/img/home/jacanalogo.png';
 
 
@@ -18,6 +9,7 @@ import logo from '../../assets/img/home/jacanalogo.png';
 import '../../assets/css/style.css';
 // responsive CSS File
 import '../../assets/css/responsive.css';
+import "@fontsource/poppins";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { SlHome } from "react-icons/sl";

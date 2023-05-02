@@ -10,10 +10,8 @@
 --------------------------------------------------------------*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
 :root{
-  --font-family: 'poppins' !important;
+  --font-family:  "Poppins" !important;
 }
 
 body{
@@ -43,39 +41,6 @@ h5,
 h6,
 .font-primary {
   font-family: var(--font-family) !important;
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-  background: #68A4C4;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #85b6cf;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -714,6 +679,12 @@ h2.heading_name {
 .icons_row:hover svg {
   color: #000;
 }
+.third-section .icons_row p {
+  margin-bottom: 0;
+  line-height: 26px;
+  text-align: center;
+  min-height:130px;
+}
 .icons_row p {
   margin-bottom: 0;
   line-height: 26px;
@@ -726,7 +697,7 @@ h2.heading_name {
 .fourth-section{
   margin-top:250px;
   background:url(../img/home/grow-section1.jpg);
-  
+  background-size: cover;
 }
 .align-center {
   align-items: center;
@@ -758,6 +729,7 @@ h2.heading_name {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   z-index: -1;
   background-color: #0ea0c3;
+  display:none;
 }
 .assistant-content span {
   font-weight: 600;
@@ -905,7 +877,7 @@ h2.heading_name {
 .fifth-section ul li {
   float: left;
   width: 20%;
-  padding: 50px;
+  padding: 50px 30px;
   box-shadow: 0 0.813rem 1.313rem rgba(0,0,0,.05);
   margin: 0px;
   text-align: center;
@@ -1306,7 +1278,7 @@ span.icon-contract:after {
   float: left;
   width: 100%;
   border: 1px solid #f4f4f4;
-  padding: 20px;
+  padding: 15px;
   border-radius: 14px;
 }
 .blogs-outer {

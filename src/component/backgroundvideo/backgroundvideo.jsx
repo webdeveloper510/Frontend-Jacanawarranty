@@ -1,8 +1,6 @@
 import React from "react"
-import styled from "styled-components"
-import Vimeo from "@u-wave/react-vimeo"
+
 import Button from 'react-bootstrap/Button';
-import IframePlayer from "player-iframe-video";
 export default function BackgroundVideo() {
  
   return (
