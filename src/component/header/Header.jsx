@@ -9,7 +9,7 @@ import logo from '../../assets/img/home/jacanalogo.png';
 import '../../assets/css/style.css';
 // responsive CSS File
 import '../../assets/css/responsive.css';
-import "@fontsource/poppins";
+
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { SlHome } from "react-icons/sl";
